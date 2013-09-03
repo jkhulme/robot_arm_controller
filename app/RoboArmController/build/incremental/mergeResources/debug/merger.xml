@@ -2,34 +2,34 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res" >
+        <source path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res" >
             <file
                 name="ic_launcher"
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/drawable-mdpi/ic_launcher.png"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="activity_main"
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/layout/activity_main.xml"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/layout/activity_main.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="main"
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/menu/main.xml"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/menu/main.xml"
                 qualifiers=""
                 type="menu" />
             <file
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/values/dimens.xml"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/values/dimens.xml"
                 qualifiers="" >
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
@@ -37,11 +37,15 @@
                 </dimen>
             </file>
             <file
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/values/strings.xml"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/values/strings.xml"
                 qualifiers="" >
+                <string name="title_activity_remote_control" >Remote Control
+                </string>
                 <string name="action_settings" >Settings
                 </string>
                 <string name="app_name" >RoboArmController
+                </string>
+                <string name="hello_world" >Hello world!
                 </string>
                 <string name="ip_address" >IP Address
                 </string>
@@ -51,7 +55,7 @@
                 </string>
             </file>
             <file
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/values/styles.xml"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/values/styles.xml"
                 qualifiers="" >
 
                 <style
@@ -73,13 +77,13 @@
                 </style>
             </file>
             <file
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/values-sw720dp-land/dimens.xml"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/values-sw720dp-land/dimens.xml"
                 qualifiers="sw720dp-land" >
                 <dimen name="activity_horizontal_margin" >128dp
                 </dimen>
             </file>
             <file
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/values-v11/styles.xml"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/values-v11/styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -90,7 +94,7 @@
                 </style>
             </file>
             <file
-                path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/values-v14/styles.xml"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/values-v14/styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -100,11 +104,21 @@
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
+            <file
+                name="activity_remote_control"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/layout/activity_remote_control.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="remote_control"
+                path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/menu/remote_control.xml"
+                qualifiers=""
+                type="menu" />
         </source>
-        <source path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/build/res/rs/debug" />
+        <source path="/Users/james/projects/robot_arm_controller/app/RoboArmController/build/res/rs/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/debug/res" />
+        <source path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/debug/res" />
     </dataSet>
 
 </merger>

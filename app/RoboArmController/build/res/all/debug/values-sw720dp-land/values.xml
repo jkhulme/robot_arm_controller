@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/values-sw720dp-land/dimens.xml -->
+    <!-- From: file:/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/values-sw720dp-land/dimens.xml -->
     <dimen name="activity_horizontal_margin">128dp</dimen>
 
 </resources>

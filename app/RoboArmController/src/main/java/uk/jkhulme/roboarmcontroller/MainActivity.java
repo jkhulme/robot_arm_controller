@@ -1,14 +1,14 @@
 package uk.jkhulme.roboarmcontroller;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
 
-import java.io.BufferedInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -29,13 +29,20 @@ public class MainActivity extends Activity {
     }
 
     public void connectToServer(View v) throws IOException{
-        String url = "http://192.168.1.74:8000";
-
+        EditText ip_address = (EditText)findViewById(R.id.editTextIp);
+        String ip = ip_address.getText().toString();
+        System.out.println(ip);
+        EditText code = (EditText)findViewById(R.id.editTextCode);
+        String code_text = code.getText().toString();
+        String url = "http://" + ip + ":8000/code=" + code_text;
         try {
             Boolean success = new ConnectToServer().execute(url).get();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        Intent intent = new Intent(this, RemoteControlActivity.class);
+        startActivity(intent);
 
     }
 
@@ -44,7 +51,7 @@ public class MainActivity extends Activity {
         public Boolean doInBackground(String... urls) {
             HttpURLConnection urlConnection = null;
             try {
-                URL url = new URL(urls[0]);
+                URL url = new URL(urls[0] + "&command=0000");
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.getInputStream();
                 return true;

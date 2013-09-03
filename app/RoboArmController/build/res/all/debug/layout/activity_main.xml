@@ -38,4 +38,4 @@
             android:layout_marginTop="21dp"
             android:layout_alignRight="@+id/editTextCode"/>
 </RelativeLayout>
-<!-- From: file:/Users/james/AndroidStudioProjects/RoboArmControllerProject/RoboArmController/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/layout/activity_main.xml -->

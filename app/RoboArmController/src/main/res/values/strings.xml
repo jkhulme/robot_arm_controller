@@ -6,5 +6,7 @@
     <string name="ip_address">IP Address</string>
     <string name="code">4 Digit Code</string>
     <string name="connect">Connect</string>
+    <string name="title_activity_remote_control">Remote Control</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
