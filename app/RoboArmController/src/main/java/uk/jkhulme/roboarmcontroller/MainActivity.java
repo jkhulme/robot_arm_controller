@@ -13,7 +13,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class MainActivity extends Activity {
-
+    private World world = World.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
         public Boolean doInBackground(String... urls) {
             HttpURLConnection urlConnection = null;
             try {
-                URL url = new URL(urls[0] + "&command=0000");
+                URL url = new URL(urls[0] + "&command=" + world.getLOGIN());
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.getInputStream();
                 return true;
