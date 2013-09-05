@@ -53,9 +53,14 @@ public class MainActivity extends Activity {
             try {
                 URL url = new URL(urls[0] + "&command=" + world.getLOGIN());
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                con.getInputStream();
+                //con.getInputStream();
+                System.out.println("About to request response code");
+                int response = con.getResponseCode();
+                System.out.println("RESPONSECODE");
+                System.out.println(Integer.toString(response));
                 return true;
             } catch (Exception e) {
+                System.out.println("Error");
                 e.printStackTrace();
             }
             return false;
