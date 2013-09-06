@@ -33,9 +33,10 @@ public class MainActivity extends Activity {
     public void connectToServer(View v) throws IOException{
         EditText ip_address = (EditText)findViewById(R.id.editTextIp);
         String ip = ip_address.getText().toString();
-        System.out.println(ip);
+        world.setIp(ip);
         EditText code = (EditText)findViewById(R.id.editTextCode);
         String code_text = code.getText().toString();
+        world.setCode(code_text);
         String url = "http://" + ip + ":8000/code=" + code_text;
         Integer response_code = 0;
         try {
@@ -77,14 +78,9 @@ public class MainActivity extends Activity {
             try {
                 URL url = new URL(urls[0] + "&command=" + world.getLOGIN());
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                //con.getInputStream();
-                System.out.println("About to request response code");
                 int response = con.getResponseCode();
-                System.out.println("RESPONSECODE");
-                System.out.println(Integer.toString(response));
                 return response;
             } catch (Exception e) {
-                System.out.println("Error");
                 e.printStackTrace();
             }
             return 0;

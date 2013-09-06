@@ -39,15 +39,15 @@
             <file
                 path="/Users/james/projects/robot_arm_controller/app/RoboArmController/src/main/res/values/strings.xml"
                 qualifiers="" >
-                <string name="title_activity_remote_control" >Remote Control
-                </string>
                 <string name="action_settings" >Settings
+                </string>
+                <string name="title_activity_remote_control" >Remote Control
                 </string>
                 <string name="app_name" >RoboArmController
                 </string>
-                <string name="hello_world" >Hello world!
-                </string>
                 <string name="ip_address" >IP Address
+                </string>
+                <string name="hello_world" >Hello world!
                 </string>
                 <string name="connect" >Connect
                 </string>

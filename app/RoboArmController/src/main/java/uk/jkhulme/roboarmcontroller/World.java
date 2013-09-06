@@ -1,5 +1,7 @@
 package uk.jkhulme.roboarmcontroller;
 
+import java.net.HttpURLConnection;
+
 /**
  * Created by james on 04/09/2013.
  */
@@ -16,6 +18,9 @@ public class World {
     private final String GRIP_OPEN = "1001";
     private final String GRIP_CLOSE = "1010";
     private final String LIGHT_ON = "1011";
+
+    private String ip = null;
+    private String code = null;
 
     private static World instance = null;
 
@@ -76,4 +81,21 @@ public class World {
     public String getLIGHT_ON() {
         return LIGHT_ON;
     }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
 }
