@@ -2,36 +2,65 @@ import sys
 import BaseHTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 import random
-from urlparse import urlparse
 
 code = 0
 
-#example call - http://192.168.1.74:8000/?cmd=0001&key=foobar
+_LOGIN = "0000";
+_ROTATE_CCW = "0001";
+_ROTATE_CW = "0010";
+_SHOULDER_UP = "0011";
+_SHOULDER_DOWN = "0100";
+_ELBOW_UP = "0101";
+_ELBOW_DOWN = "0110";
+_WRIST_UP = "0111";
+_WRIST_DOWN = "1000";
+_GRIP_OPEN = "1001";
+_GRIP_CLOSE = "1010";
+_LIGHT_ON = "1011";
+
 class ServerHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     def do_GET(self):
-        print self.path
         params = {}
         for param in self.path[1:].split('&'):
             print param
             (key, value) = param.split("=")
             params[key] = value
-        print params
         global code
-        print params['code']
-        print code
         if params['code'] == code:
-            print "correct code"
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
+            self.execute_command(params['command'])
         else:
-            print "incorrect code"
             self.send_response(401)
             self.send_header('WWW-Authenticate', 'Basic realm="robo_arm_app"')
 
         self.end_headers()
         return
 
+    def execute_command(self, cmd):
+        if cmd == _ROTATE_CCW:
+            print "rotating arm ccw"
+        elif cmd == _ROTATE_CW:
+            print "rotating arm cw"
+        elif cmd == _SHOULDER_UP:
+            print "moving shoulder up"
+        elif cmd == _SHOULDER_DOWN:
+            print "moving shoulder down"
+        elif cmd == _ELBOW_UP:
+            print "moving elbow up"
+        elif cmd == _ELBOW_DOWN:
+            print "moving elbow down"
+        elif cmd == _WRIST_UP:
+            print "moving wrist up"
+        elif cmd == _WRIST_DOWN:
+            print "moving wrist down"
+        elif cmd == _GRIP_OPEN:
+            print "opening grip"
+        elif cmd == _GRIP_CLOSE:
+            print "closing grip"
+        elif cmd == _LIGHT_ON:
+            print "toggling light"
 
 def start_server():
     HandlerClass = SimpleHTTPRequestHandler

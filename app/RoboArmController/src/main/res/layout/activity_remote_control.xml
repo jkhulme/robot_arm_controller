@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:text="New Button"
             android:id="@+id/grip_close_button"
-            android:onClick="gripOpen"
+            android:onClick="gripClose"
             android:layout_alignTop="@+id/grip_open_button"
             android:layout_alignLeft="@+id/wrist_down_button"/>
 
