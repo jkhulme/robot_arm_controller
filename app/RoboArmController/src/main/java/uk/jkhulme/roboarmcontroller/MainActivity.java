@@ -1,5 +1,7 @@
 package uk.jkhulme.roboarmcontroller;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -35,20 +37,42 @@ public class MainActivity extends Activity {
         EditText code = (EditText)findViewById(R.id.editTextCode);
         String code_text = code.getText().toString();
         String url = "http://" + ip + ":8000/code=" + code_text;
+        Integer response_code = 0;
         try {
-            Boolean success = new ConnectToServer().execute(url).get();
+            response_code = new ConnectToServer().execute(url).get();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        Intent intent = new Intent(this, RemoteControlActivity.class);
-        startActivity(intent);
-
+        if (response_code == 200) {
+            Intent intent = new Intent(this, RemoteControlActivity.class);
+            startActivity(intent);
+        } else if (response_code == 401) {
+            new AlertDialog.Builder(this)
+                    .setTitle("Authentication Error")
+                    .setMessage("Incorrect code")
+                    .setPositiveButton("Continue", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    })
+                    .show();
+        } else {
+            new AlertDialog.Builder(this)
+                    .setTitle("Connection Error")
+                    .setMessage("Could not connect to that ip address.\n" +
+                                "Please ensure the details are correct")
+                    .setPositiveButton("Continue", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    })
+                    .show();
+        }
     }
 
-    private class ConnectToServer extends AsyncTask<String, Void, Boolean> {
+    private class ConnectToServer extends AsyncTask<String, Void, Integer> {
 
-        public Boolean doInBackground(String... urls) {
+        public Integer doInBackground(String... urls) {
             HttpURLConnection urlConnection = null;
             try {
                 URL url = new URL(urls[0] + "&command=" + world.getLOGIN());
@@ -58,12 +82,12 @@ public class MainActivity extends Activity {
                 int response = con.getResponseCode();
                 System.out.println("RESPONSECODE");
                 System.out.println(Integer.toString(response));
-                return true;
+                return response;
             } catch (Exception e) {
                 System.out.println("Error");
                 e.printStackTrace();
             }
-            return false;
+            return 0;
         }
     }
     

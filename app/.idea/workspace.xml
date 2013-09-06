@@ -11,7 +11,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Sys" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="System.o" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1004cda1-e61d-49f8-94ec-5bb4c636402e" name="Default" comment="" />
@@ -80,8 +80,13 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/java/uk/jkhulme/roboarmcontroller/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="66" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.63709676" vertical-offset="453" max-vertical-offset="990">
-              <folding />
+            <state line="44" column="9" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.27419356" vertical-offset="378" max-vertical-offset="1320">
+              <folding>
+                <element signature="e#1870#2084#0" expanded="true" />
+                <element signature="e#2061#2062#0" expanded="true" />
+                <element signature="e#2424#2638#0" expanded="true" />
+                <element signature="e#2615#2616#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +94,7 @@
       <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/java/uk/jkhulme/roboarmcontroller/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+            <state line="23" column="5" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -106,13 +111,13 @@
       </file>
       <file leaf-file-name="activity_remote_control.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/layout/activity_remote_control.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -127,17 +132,13 @@
       </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="40" selection-start="632" selection-end="632" vertical-scroll-proportion="-2.7777777" vertical-offset="120" max-vertical-offset="690">
-              <folding>
-                <element signature="e#658#678#0" expanded="true" />
-                <element signature="e#1088#1102#0" expanded="true" />
-                <element signature="e#1342#1359#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="40" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="690">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -239,7 +240,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -327,18 +327,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="froyo" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="4.1" />
     <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
@@ -499,12 +500,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="29" width="1420" height="860" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.52287585" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -513,7 +513,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47712418" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47712418" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -525,6 +525,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.52287585" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -541,14 +542,21 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="34" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/layout/activity_remote_control.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/AndroidManifest.xml">
@@ -559,17 +567,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="44" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="690">
-          <folding>
-            <element signature="e#658#678#0" expanded="true" />
-            <element signature="e#1088#1102#0" expanded="true" />
-            <element signature="e#1342#1359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="44" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="690">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/values/strings.xml">
@@ -582,7 +586,12 @@
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/java/uk/jkhulme/roboarmcontroller/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="29" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="960">
-          <folding />
+          <folding>
+            <element signature="e#1870#2084#0" expanded="true" />
+            <element signature="e#2061#2062#0" expanded="true" />
+            <element signature="e#2424#2638#0" expanded="true" />
+            <element signature="e#2615#2616#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -594,17 +603,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="34" column="44" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="690">
-          <folding>
-            <element signature="e#658#678#0" expanded="true" />
-            <element signature="e#1088#1102#0" expanded="true" />
-            <element signature="e#1342#1359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="34" column="44" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="690">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/values/strings.xml">
@@ -622,13 +627,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/layout/activity_remote_control.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/AndroidManifest.xml">
@@ -639,17 +644,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="40" selection-start="632" selection-end="632" vertical-scroll-proportion="-2.7777777" vertical-offset="120" max-vertical-offset="690">
-          <folding>
-            <element signature="e#658#678#0" expanded="true" />
-            <element signature="e#1088#1102#0" expanded="true" />
-            <element signature="e#1342#1359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="40" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/java/uk/jkhulme/roboarmcontroller/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1275">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/java/uk/jkhulme/roboarmcontroller/RemoteControlActivity.java">
@@ -659,17 +667,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/java/uk/jkhulme/roboarmcontroller/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RoboArmController/src/main/java/uk/jkhulme/roboarmcontroller/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="66" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.63709676" vertical-offset="453" max-vertical-offset="990">
-          <folding />
+        <state line="44" column="9" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.27419356" vertical-offset="378" max-vertical-offset="1320">
+          <folding>
+            <element signature="e#1870#2084#0" expanded="true" />
+            <element signature="e#2061#2062#0" expanded="true" />
+            <element signature="e#2424#2638#0" expanded="true" />
+            <element signature="e#2615#2616#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

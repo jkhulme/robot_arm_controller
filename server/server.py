@@ -11,7 +11,6 @@ class ServerHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     def do_GET(self):
         print self.path
-        query = urlparse(self.path).query
         params = {}
         for param in self.path[1:].split('&'):
             print param
@@ -25,14 +24,12 @@ class ServerHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             print "correct code"
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
-            self.end_headers()
-            self.wfile.write('<HTML><body>Hello World!</body></HTML>')
         else:
             print "incorrect code"
             self.send_response(401)
-            self.send_header('Content-type', 'text/html')
-            self.end_headers()
-            self.wfile.write('<HTML><body>Hello World!</body></HTML>')
+            self.send_header('WWW-Authenticate', 'Basic realm="robo_arm_app"')
+
+        self.end_headers()
         return
 
 
