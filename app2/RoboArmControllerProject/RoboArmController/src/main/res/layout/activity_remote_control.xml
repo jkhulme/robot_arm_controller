@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".RemoteControlActivity">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/rotate_ccw_button"
+            android:onClick="rotateCCW"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/rotate_cw_button"
+            android:onClick="rotateCW"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/shoulder_up_button"
+            android:onClick="shoulderUp"
+            android:layout_below="@+id/rotate_ccw_button"
+            android:layout_alignParentLeft="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/shoulder_down_button"
+            android:onClick="shoulderDown"
+            android:layout_below="@+id/rotate_cw_button"
+            android:layout_alignParentRight="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/elbow_up_button"
+            android:onClick="elbowUp"
+            android:layout_below="@+id/shoulder_up_button"
+            android:layout_alignLeft="@+id/shoulder_up_button"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/elbow_down_button"
+            android:onClick="elbowDown"
+            android:layout_below="@+id/shoulder_down_button"
+            android:layout_alignLeft="@+id/shoulder_down_button"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/wrist_up_button"
+            android:onClick="wristUp"
+            android:layout_below="@+id/elbow_up_button"
+            android:layout_alignLeft="@+id/elbow_up_button"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/wrist_down_button"
+            android:onClick="wristDown"
+            android:layout_alignTop="@+id/wrist_up_button"
+            android:layout_alignLeft="@+id/elbow_down_button"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/grip_open_button"
+            android:onClick="gripOpen"
+            android:layout_below="@+id/wrist_up_button"
+            android:layout_alignLeft="@+id/wrist_up_button"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/grip_close_button"
+            android:onClick="gripClose"
+            android:layout_alignTop="@+id/grip_open_button"
+            android:layout_alignLeft="@+id/wrist_down_button"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/toggle_light_button"
+            android:onClick="toggleLight"
+            android:layout_below="@+id/grip_open_button"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
