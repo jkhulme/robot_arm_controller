@@ -2,21 +2,23 @@ import sys
 import BaseHTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 import random
+import usbarm
 
 code = 0
 
-_LOGIN = "0000";
-_ROTATE_CCW = "0001";
-_ROTATE_CW = "0010";
-_SHOULDER_UP = "0011";
-_SHOULDER_DOWN = "0100";
-_ELBOW_UP = "0101";
-_ELBOW_DOWN = "0110";
-_WRIST_UP = "0111";
-_WRIST_DOWN = "1000";
-_GRIP_OPEN = "1001";
-_GRIP_CLOSE = "1010";
-_LIGHT_ON = "1011";
+_LOGIN = "0000"
+_ROTATE_CCW = "0001"
+_ROTATE_CW = "0010"
+_SHOULDER_UP = "0011"
+_SHOULDER_DOWN = "0100"
+_ELBOW_UP = "0101"
+_ELBOW_DOWN = "0110"
+_WRIST_UP = "0111"
+_WRIST_DOWN = "1000"
+_GRIP_OPEN = "1001"
+_GRIP_CLOSE = "1010"
+_LIGHT_ON = "1011"
+
 
 class ServerHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
@@ -40,32 +42,34 @@ class ServerHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     def execute_command(self, cmd):
         if cmd == _ROTATE_CCW:
-            print "rotating arm ccw"
+            usbarm.ctrl(1, usbarm.rotate_ccw)
         elif cmd == _ROTATE_CW:
-            print "rotating arm cw"
+            usbarm.ctrl(1, usbarm.rotate_cw)
         elif cmd == _SHOULDER_UP:
-            print "moving shoulder up"
+            usbarm.ctrl(1, usbarm.shoulder_up)
         elif cmd == _SHOULDER_DOWN:
-            print "moving shoulder down"
+            usbarm.ctrl(1, usbarm.shoulder_down)
         elif cmd == _ELBOW_UP:
-            print "moving elbow up"
+            usbarm.ctrl(1, usbarm.elbow_up)
         elif cmd == _ELBOW_DOWN:
-            print "moving elbow down"
+            usbarm.ctrl(1, usbarm.elbow_down)
         elif cmd == _WRIST_UP:
-            print "moving wrist up"
+            usbarm.ctrl(1, usbarm.wrist_up)
         elif cmd == _WRIST_DOWN:
-            print "moving wrist down"
+            usbarm.ctrl(1, usbarm.wrist_down)
         elif cmd == _GRIP_OPEN:
-            print "opening grip"
+            usbarm.ctrl(1, usbarm.grip_open)
         elif cmd == _GRIP_CLOSE:
-            print "closing grip"
+            usbarm.ctrl(1, usbarm.grip_close)
         elif cmd == _LIGHT_ON:
-            print "toggling light"
+            usbarm.ctrl(1, usbarm.light_on)
+
 
 def start_server():
     HandlerClass = SimpleHTTPRequestHandler
     ServerClass = BaseHTTPServer.HTTPServer
     Protocol = "HTTP/1.0"
+    usbarm.connect()
 
     if sys.argv[1:]:
         port = int(sys.argv[1])
@@ -81,9 +85,10 @@ def start_server():
     while True:
         httpd.handle_request()
 
+
 def generate_code():
     global code
-    code = str(random.randint(0,9)) + str(random.randint(0,9)) + str(random.randint(0,9)) + str(random.randint(0,9))
+    code = str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
     print code
 
 if __name__ == "__main__":
