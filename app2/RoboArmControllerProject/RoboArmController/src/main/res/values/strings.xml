@@ -8,5 +8,16 @@
     <string name="connect">Connect</string>
     <string name="title_activity_remote_control">Remote Control</string>
     <string name="hello_world">Hello world!</string>
+    <string name="rotate_ccw">Rotate Base CCW</string>
+    <string name="rotate_cw">Rotate Base CW</string>
+    <string name="shoulder_up">Shoulder Up</string>
+    <string name="shoulder_down">Shoulder Down</string>
+    <string name="elbow_up">Elbow Up</string>
+    <string name="elbow_down">Elbow Down</string>
+    <string name="wrist_up">Wrist Up</string>
+    <string name="wrist_down">Wrist Down</string>
+    <string name="grip_open">Grip Open</string>
+    <string name="grip_close">Grip Close</string>
+    <string name="light_on">Light On</string>
 
 </resources>

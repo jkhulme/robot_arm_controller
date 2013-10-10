@@ -11,7 +11,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/rotate_ccw"
             android:id="@+id/rotate_ccw_button"
             android:onClick="rotateCCW"
             android:layout_alignParentTop="true"
@@ -20,7 +20,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/rotate_cw"
             android:id="@+id/rotate_cw_button"
             android:onClick="rotateCW"
             android:layout_alignParentTop="true"
@@ -29,7 +29,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/shoulder_up"
             android:id="@+id/shoulder_up_button"
             android:onClick="shoulderUp"
             android:layout_below="@+id/rotate_ccw_button"
@@ -38,7 +38,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/shoulder_down"
             android:id="@+id/shoulder_down_button"
             android:onClick="shoulderDown"
             android:layout_below="@+id/rotate_cw_button"
@@ -47,7 +47,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/elbow_up"
             android:id="@+id/elbow_up_button"
             android:onClick="elbowUp"
             android:layout_below="@+id/shoulder_up_button"
@@ -56,7 +56,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/elbow_down"
             android:id="@+id/elbow_down_button"
             android:onClick="elbowDown"
             android:layout_below="@+id/shoulder_down_button"
@@ -65,7 +65,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/wrist_up"
             android:id="@+id/wrist_up_button"
             android:onClick="wristUp"
             android:layout_below="@+id/elbow_up_button"
@@ -74,7 +74,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/wrist_down"
             android:id="@+id/wrist_down_button"
             android:onClick="wristDown"
             android:layout_alignTop="@+id/wrist_up_button"
@@ -83,7 +83,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/grip_open"
             android:id="@+id/grip_open_button"
             android:onClick="gripOpen"
             android:layout_below="@+id/wrist_up_button"
@@ -92,7 +92,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/grip_close"
             android:id="@+id/grip_close_button"
             android:onClick="gripClose"
             android:layout_alignTop="@+id/grip_open_button"
@@ -101,7 +101,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="@string/light_on"
             android:id="@+id/toggle_light_button"
             android:onClick="toggleLight"
             android:layout_below="@+id/grip_open_button"

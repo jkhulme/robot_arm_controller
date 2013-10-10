@@ -79,6 +79,7 @@ public class MainActivity extends Activity {
                 URL url = new URL(urls[0] + "&command=" + world.getLOGIN());
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 int response = con.getResponseCode();
+                System.out.println("RESPONSE2: " + Integer.toString(response));
                 return response;
             } catch (Exception e) {
                 e.printStackTrace();
